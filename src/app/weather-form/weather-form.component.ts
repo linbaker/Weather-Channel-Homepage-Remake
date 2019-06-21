@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule, FormControl, FormGroup, FormBuilder } from '@angular/forms';
+import {WeatherDataService } from '../weather-data.service';
 
 @Component({
   selector: 'app-weather-form',
   templateUrl: './weather-form.component.html',
-  styleUrls: ['./weather-form.component.css']
+  styleUrls: ['./weather-form.component.css'],
+  providers: [ WeatherDataService ]
 })
 
 export class WeatherFormComponent implements OnInit {
