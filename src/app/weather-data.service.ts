@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
+import { weatherAPI } from '../environments/api-keys';
 
 @Injectable()
 export class WeatherDataService {
