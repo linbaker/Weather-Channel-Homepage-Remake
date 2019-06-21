@@ -9,8 +9,8 @@ export class WeatherDataService {
 
   constructor(private http: Http) { }
 
-  searchWeatherData(cityName: string): Observable<any> {
-      return this.http.get(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID="1a884f65ad6bb67b17e772389e29b35e"`)
+  searchWeatherData(city: string): Observable<any> {
+      return this.http.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID="1a884f65ad6bb67b17e772389e29b35e"`)
           .map(response => response.json())
           .catch(error => {
               console.error(error);
