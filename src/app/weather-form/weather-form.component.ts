@@ -23,9 +23,9 @@ export class WeatherFormComponent implements OnInit {
 
     }
 
-    onSearchLocation(cityName:string) {
+    onSearchLocation(city:string) {
         this.searchStream
-            .next(cityName);
+            .next(city);
     }
 
     ngOnInit() {
