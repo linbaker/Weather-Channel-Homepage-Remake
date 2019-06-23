@@ -10,10 +10,6 @@ export class WeatherDataService {
 
   constructor(private http: Http) { }
 
-  getWeather() {
-      return Weather;
-  }
-
   searchWeatherData(city: string): Observable<any> {
       return this.http.get(`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=1a884f65ad6bb67b17e772389e29b35e&units=imperial`)
           .map(response => response.json())

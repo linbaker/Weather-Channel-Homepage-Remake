@@ -21,9 +21,8 @@ export class WeatherFormComponent implements OnInit {
     }
 
     onSubmit() {
-        const weather = new Weather(this.data.name, this.data.weather[0].description, this.data.main.temp);
-        this.weatherDataService.addWeather(weather);
-
+        const weatherByLocation = new Weather(this.data.name, this.data.weather[0].description, this.data.main.temp);
+        return weatherByLocation;
     }
 
     onSearchLocation(city:string) {
