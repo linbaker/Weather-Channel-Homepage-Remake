@@ -11,7 +11,7 @@ export class WeatherDataService {
   constructor(private http: Http) { }
 
   getWeather() {
-      return WeatherReturn;
+      return Weather;
   }
 
   searchWeatherData(city: string): Observable<any> {

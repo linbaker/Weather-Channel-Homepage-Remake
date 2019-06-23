@@ -3,7 +3,6 @@ import { FormsModule, FormControl, FormGroup, FormBuilder } from '@angular/forms
 import {Subject} from "rxjs/Subject";
 
 import {WeatherDataService } from '../weather-data.service';
-import {WeatherObjectComponent} from "../weather-object/weather-object.component";
 import { Weather } from "../models/weather.model";
 
 @Component({
