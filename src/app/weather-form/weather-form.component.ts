@@ -18,12 +18,12 @@ export class WeatherFormComponent implements OnInit {
     private searchStream = new Subject <string> ();
     data: any = {};
 
-    constructor(private weatherService:WeatherService) {
+    constructor(private weatherDataService:WeatherDataService) {
     }
 
     onSubmit() {
         const weather = new Weather(this.data.name, this.data.weather[0].description, this.data.main.temp);
-        this.weatherService.addWeather(weather);
+        this.weatherDataService.addWeather(weather);
 
     }
 
@@ -36,7 +36,7 @@ export class WeatherFormComponent implements OnInit {
         this.searchStream
             .debounceTime(300)
             .distinctUntilChanged()
-            .switchMap((input:string) => this._weatherService.searchWeatherData(input))
+            .switchMap((input: string) => this.weatherDataService.searchWeatherData(input))
             .subscribe(
               data => this.data = data
             );
