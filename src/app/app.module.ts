@@ -9,6 +9,10 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { LoginComponent } from './login/login.component';
+import { EmailComponent } from './email/email.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { MembersComponent } from './members/members.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -21,7 +25,11 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent
+    NavBarComponent,
+    LoginComponent,
+    EmailComponent,
+    SignUpComponent,
+    MembersComponent
   ],
   imports: [
     BrowserModule,

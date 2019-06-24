@@ -1,9 +1,11 @@
 export const masterFirebaseConfig = {
-    apiKey: "xxxx",
-    authDomain: "xxxx.firebaseapp.com",
-    databaseURL: "https://xxxx.firebaseio.com",
-    storageBucket: "xxxx.appspot.com",
-    messagingSenderId: "xxxx"
+  apiKey: "AIzaSyC__UkdvVO1NG6w5YeKov_8tVr3QoY_3uc",
+     authDomain: "weather-channel-remake.firebaseapp.com",
+     databaseURL: "https://weather-channel-remake.firebaseio.com",
+     projectId: "weather-channel-remake",
+     storageBucket: "",
+     messagingSenderId: "956473637352",
+     appId: "1:956473637352:web:071737197a867c1a"
   };
 
 export const weatherAPI = {
