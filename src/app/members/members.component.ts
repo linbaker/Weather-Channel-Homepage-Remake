@@ -13,6 +13,16 @@ export class MembersComponent implements OnInit {
   name: any;
   state: string = '';
 
+  constructor(public af: AngularFire,private router: Router) {
+
+    this.af.auth.subscribe(auth => {
+      if(auth) {
+        this.name = auth;
+      }
+    });
+
+  }
+
   logout() {
      this.af.auth.logout();
      this.router.navigateByUrl('/login');
