@@ -1,2 +1,3 @@
 baseURL in tsconfig.json
-accessing api-key folder from atom 
+accessing api-key folder from atom
+calling route names vs calling imports 
