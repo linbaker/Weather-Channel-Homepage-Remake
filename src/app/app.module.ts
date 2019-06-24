@@ -13,6 +13,7 @@ import { LoginComponent } from './login/login.component';
 import { EmailComponent } from './email/email.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { MembersComponent } from './members/members.component';
+import { SignupComponent } from './signup/signup.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     LoginComponent,
     EmailComponent,
     SignUpComponent,
-    MembersComponent
+    MembersComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
